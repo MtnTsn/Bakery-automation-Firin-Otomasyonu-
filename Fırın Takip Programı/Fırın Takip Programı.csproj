@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AE7CCD8-B49A-4CE4-B830-FC0BD5DF4B86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fırın_Takip_Programı</RootNamespace>
+    <AssemblyName>Fırın Takip Programı</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\Win32dasm\Toplu_Mail\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Araç Kartlari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Araç Kartlari.Designer.cs">
+      <DependentUpon>Araç Kartlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cari Kart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari Kart.Designer.cs">
+      <DependentUpon>Cari Kart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura listesi.Designer.cs">
+      <DependentUpon>Fatura listesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura_İslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura_İslemleri.Designer.cs">
+      <DependentUpon>Fatura_İslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firin_Takip_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firin_Takip_Menu.Designer.cs">
+      <DependentUpon>Firin_Takip_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Malzeme_Faturalari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Malzeme_Faturalari.Designer.cs">
+      <DependentUpon>Malzeme_Faturalari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stok Kart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok Kart.Designer.cs">
+      <DependentUpon>Stok Kart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etiket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Etiket.Designer.cs">
+      <DependentUpon>Etiket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tek_Fatura_Kesimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tek_Fatura_Kesimi.Designer.cs">
+      <DependentUpon>Tek_Fatura_Kesimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tezgah_Satisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tezgah_Satisi.Designer.cs">
+      <DependentUpon>Tezgah_Satisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Urun_Receteleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Urun_Receteleri.Designer.cs">
+      <DependentUpon>Urun_Receteleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İrsaliye_Listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İrsaliye_Listesi.Designer.cs">
+      <DependentUpon>İrsaliye_Listesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İrsaliye_İslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İrsaliye_İslemleri.Designer.cs">
+      <DependentUpon>İrsaliye_İslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İRSALİYE FATURA LİSTESİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İRSALİYE FATURA LİSTESİ.Designer.cs">
+      <DependentUpon>İRSALİYE FATURA LİSTESİ.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Araç Kartlari.resx">
+      <DependentUpon>Araç Kartlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari Kart.resx">
+      <DependentUpon>Cari Kart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura listesi.resx">
+      <DependentUpon>Fatura listesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura_İslemleri.resx">
+      <DependentUpon>Fatura_İslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firin_Takip_Menu.resx">
+      <DependentUpon>Firin_Takip_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Malzeme_Faturalari.resx">
+      <DependentUpon>Malzeme_Faturalari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Stok Kart.resx">
+      <DependentUpon>Stok Kart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etiket.resx">
+      <DependentUpon>Etiket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tek_Fatura_Kesimi.resx">
+      <DependentUpon>Tek_Fatura_Kesimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tezgah_Satisi.resx">
+      <DependentUpon>Tezgah_Satisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urun_Receteleri.resx">
+      <DependentUpon>Urun_Receteleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İrsaliye_Listesi.resx">
+      <DependentUpon>İrsaliye_Listesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İrsaliye_İslemleri.resx">
+      <DependentUpon>İrsaliye_İslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İRSALİYE FATURA LİSTESİ.resx">
+      <DependentUpon>İRSALİYE FATURA LİSTESİ.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resimler\bayilogo1.gif" />
+    <Content Include="Resimler\btna01.gif" />
+    <Content Include="Resimler\btna02.gif" />
+    <Content Include="Resimler\btna03.gif" />
+    <Content Include="Resimler\btna04.gif" />
+    <Content Include="Resimler\btna05.gif" />
+    <Content Include="Resimler\btna06.gif" />
+    <Content Include="Resimler\btnb01.gif" />
+    <Content Include="Resimler\btnb02.gif" />
+    <Content Include="Resimler\btnb03.gif" />
+    <Content Include="Resimler\btnb04.gif" />
+    <Content Include="Resimler\btnb05.gif" />
+    <Content Include="Resimler\btnb06.gif" />
+    <Content Include="Resimler\Desktop-icon.png" />
+    <Content Include="Resimler\tile.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
